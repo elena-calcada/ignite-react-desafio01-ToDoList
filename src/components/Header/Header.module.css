@@ -1,0 +1,36 @@
+.header {
+  height: 12.5rem;
+  background-color: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.header img {
+  height: 3rem;
+}
+
+.form {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 46rem;
+  height: 3.375rem;
+
+  bottom: calc(-3.375rem / 2);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .form {
+    padding: 0 1.5rem;
+  }
+}
